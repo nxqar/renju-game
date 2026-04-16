@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renju Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-section">
+            <h2>Interactive board</h2>
+            <div id="status">Current turn: black. </div>
+            <div id="board"></div>
+        </div>
+
+        <div class="parser-section">
+            <button onclick="reloadGame()" class="reload-button">Reload game</button>
+            
+            <div>
+                <h2>Test case</h2>
+                <p>Paste input data below:</p>
+                <textarea id="test-input" rows="15" placeholder="1 0 0 0 ... (19x19 matrix)"></textarea>
+                <button onclick="runParser()">Process data</button>
+                <div id="test-output">Output will appear here...</div>
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
