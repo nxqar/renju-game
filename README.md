@@ -43,3 +43,10 @@ The win-condition algorithm uses a directional scanning approach. It optimizes p
     ```
 2.  Open `index.html` in any modern web browser.
 3.  To test the parser, paste a 19x19 matrix into the text area and click **"Process Data"**.
+
+### Running Test Cases
+To test the game logic using a text file, create an `input.txt` file containing the test case matrix (19x19) in the root directory. 
+
+Run the following command in your standard terminal or Command Prompt:
+```bash
+cmd /c "node renju.js < input.txt"
